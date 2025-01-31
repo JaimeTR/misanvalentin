@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaliza tu mensaje de amor</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #000000, #434343);
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            border-radius: 25px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2em;
+            text-align: center;
+            width: 300px;
+        }
+        .container h1 {
+            margin-bottom: 1em;
+            font-size: 1.5em;
+        }
+        .container input, .container textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: none;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container button {
+            padding: 0.5em 1em;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .container button:hover {
+            background-color: #ff85c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Personaliza tu mensaje de amor</h1>
+        <input type="text" id="name" placeholder="Nombre">
+        <textarea id="message" placeholder="Mensaje de amor"></textarea>
+        <button onclick="saveData()">Crear página</button>
+    </div>
+    <script>
+        function saveData() {
+            const name = document.getElementById('name').value;
+            const message = document.getElementById('message').value;
+            localStorage.setItem('name', name);
+            localStorage.setItem('message', message);
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
