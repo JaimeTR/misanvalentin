@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personaliza tu mensaje de amor</title>
+    <title><Miniña hermosa</title>
     <style>
         body {
             display: flex;
@@ -55,9 +55,9 @@
 </head>
 <body>
     <div class="container">
-        <h1>Personaliza tu mensaje de amor</h1>
+        <h1><Te amo muchoo</h1>
         <input type="text" id="name" placeholder="Nombre">
-        <textarea id="message" placeholder="Mensaje de amor"></textarea>
+        <textarea id="message" placeholder="gemita preciosa"></textarea>
         <button onclick="saveData()">Crear página</button>
     </div>
     <script>
