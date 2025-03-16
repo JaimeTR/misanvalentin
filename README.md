@@ -10,7 +10,7 @@ Este es un proyecto web para crear una página personalizada para San Valentín.
 ## Instalación y uso
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   [git clone https://github.com/tu-usuario/tu-repositorio.git](https://github.com/JaimeTR/misanvalentin.git)
    ```
 2. Abrir `editar.html` en un navegador para personalizar la página.
 3. Guardar los cambios y visualizar la versión final.
